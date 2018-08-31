@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/linearLayout_signup"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/final_login_screen">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_bg"
+        android:padding="10dp">
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:iiv_icon="faw-user"
+            android:layout_marginLeft="3dp"
+            app:iiv_color="@color/card_background"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:text=""
+            android:textColorHint="@color/white_hint"
+            android:hint="Full Name"
+            android:id="@+id/editText_signup_name"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_bg"
+        android:layout_marginTop="15dp"
+        android:padding="10dp">
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:iiv_icon="faw-envelope"
+            android:layout_marginLeft="3dp"
+            app:iiv_color="@color/card_background"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:text=""
+            android:hint="Email"
+            android:textColorHint="@color/white_hint"
+            android:inputType="textAutoComplete"
+            android:id="@+id/editText_signup_email"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_bg"
+        android:layout_marginTop="15dp"
+        android:padding="10dp">
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:iiv_icon="faw-lock"
+            android:layout_marginLeft="3dp"
+            app:iiv_color="@color/card_background"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:text=""
+            android:hint="Password"
+            android:textColorHint="@color/white_hint"
+            android:inputType="textPassword"
+            android:id="@+id/editText_signup_password"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:background="@drawable/solid_red_background"
+        android:layout_marginTop="65dp" />
+</LinearLayout>

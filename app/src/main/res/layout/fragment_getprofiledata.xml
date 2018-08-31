@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:wheel="http://schemas.android.com/tools"
+    android:scrollbars="none">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/framelayout_image"
+            android:layout_marginTop="5dp">
+
+            <com.pnikosis.materialishprogress.ProgressWheel
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/progress_wheel"
+                wheel:matProg_barColor="#5588FF"
+                wheel:matProg_progressIndeterminate="true"
+                android:layout_gravity="center" />
+
+            <com.mikepenz.iconics.view.IconicsImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/imageView_companyLogo"
+                app:iiv_color="@color/grey"
+                app:iiv_icon="faw-user"
+
+                />
+
+        </FrameLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/framelayout_image"
+            android:id="@+id/cardView_name"
+            android:layout_marginTop="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInputLayout_memberName"
+                    >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/editText_memberName"
+                    android:inputType="textPersonName"
+                    android:hint="Name"/>
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_desc"
+                    android:layout_toRightOf="@+id/imageView_email"
+                    android:layout_below="@+id/textView_Contact">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:inputType="textMultiLine"
+                        android:id="@+id/editText_memberBio"
+                        android:hint="About Yourself" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_location_jobDetails"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Branch"
+                    android:layout_marginLeft="5dp" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_branch"
+                    android:entries="@array/branch_array"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Year of Passing"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/edit_textView_year"
+                    android:layout_marginLeft="5dp" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:id="@+id/spinner_year"
+
+                    android:entries="@array/year_array"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/edit_textView_year"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="left|center"
+            android:layout_below="@+id/cardView_name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:layout_margin="10dp"
+                    android:id="@+id/checkBox_isNerd"
+                    android:text="@string/isNerdCheckBox_text"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Work"
+                    android:layout_below="@+id/checkBox_isNerd"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/textView_work"
+                    android:layout_marginTop="5dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_memberDesignation"
+                    android:layout_below="@+id/textView_work"
+                    android:layout_toRightOf="@+id/imageView_work"
+                    android:layout_toEndOf="@+id/imageView_work"
+>
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/editText_Designation"
+                        android:inputType="textAutoComplete"
+                        android:hint="Designation"
+                         />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInputLayout_company"
+                    android:layout_below="@+id/textView_memberDesignation"
+                    android:layout_toRightOf="@+id/imageView_work"
+                    android:layout_toEndOf="@+id/imageView_work"
+                    >
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:inputType="textAutoComplete"
+                        android:id="@+id/editText_company"
+                        android:hint="Organization"     />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/info_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/location"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/textInputLayout_company" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInputLayout_locationHome"
+                    android:layout_below="@+id/info_text"
+                    android:layout_alignLeft="@+id/textView_memberDesignation"
+                    android:layout_alignStart="@+id/textView_memberDesignation">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:inputType="textAutoComplete"
+                        android:id="@+id/editText_locationHome"
+                        android:hint="Home Town" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInputLayout_CurrentLocation"
+                    android:layout_below="@+id/textInputLayout_locationHome"
+                    android:layout_alignLeft="@+id/textInputLayout_locationHome"
+                    android:layout_alignStart="@+id/textInputLayout_locationHome">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:inputType="textAutoComplete"
+                        android:id="@+id/editText_locationWork"
+                        android:hint="Current Place" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView_work"
+                    app:iiv_icon="faw-home"
+                    app:iiv_color="@color/black_de"
+                    android:layout_below="@+id/info_text"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="20dp" />
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView_home"
+                    app:iiv_icon="faw-briefcase"
+                    app:iiv_color="@color/black_de"
+                    android:layout_below="@+id/textInputLayout_locationHome"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="20dp" />
+
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_contact"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/card_view_description"
+            android:layout_alignLeft="@+id/card_view_description"
+            android:layout_alignStart="@+id/card_view_description"
+            android:layout_marginTop="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_view_description"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:nestedScrollingEnabled="false"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/contact"
+                    android:id="@+id/textView_Contact"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_email_jobDetails"
+                    android:layout_toRightOf="@+id/imageView_email"
+                    android:layout_below="@+id/textView_Contact">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:inputType="textEmailAddress"
+                        android:id="@+id/editText_member_email"
+                        android:hint="e-mail address"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_website"
+                    android:layout_toRightOf="@+id/imageView_email"
+                    android:layout_below="@+id/textView_email_jobDetails">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:id="@+id/editText_memberPhone"
+                        android:hint="Phone Number" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@+id/imageView_email"
+                    android:layout_below="@+id/textView_website">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:maxLines="1"
+                        android:inputType="textUri"
+                        android:id="@+id/editText_memberWebLink"
+                        android:text="http://"
+                        android:hint="Web / Fb / Twitter / Blog Link" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView_phone"
+                    app:iiv_icon="faw-phone"
+                    app:iiv_color="@color/black_de"
+                    android:layout_alignTop="@+id/textView_website"
+                    android:layout_toLeftOf="@+id/textView_website"
+                    android:layout_toStartOf="@+id/textView_website"
+                    android:layout_marginTop="20dp" />
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView_email"
+                    app:iiv_icon="faw-envelope"
+                    app:iiv_color="@color/black_de"
+                    android:layout_alignTop="@+id/textView_email_jobDetails"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="20dp" />
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/icon_webLink"
+                    app:iiv_icon="faw-link"
+                    app:iiv_color="@color/black_de"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView_website"
+                    android:layout_marginTop="20dp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/card_view_contact"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="Save Changes"
+                style="?android:attr/borderlessButtonStyle"
+                android:textAlignment="center"
+                android:id="@+id/button_save_profile_data" />
+        </android.support.v7.widget.CardView>
+
+
+
+    </RelativeLayout>
+</ScrollView>

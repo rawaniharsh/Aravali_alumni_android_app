@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="0dp"
+    android:paddingLeft="16dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView_eventPic_list_layout"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/TextView_eventName"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/imageView_eventPic_list_layout"
+        android:layout_toEndOf="@id/imageView_eventPic_list_layout"
+        android:layout_marginLeft="16dp" />
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:background="@color/grey"
+
+        android:id="@+id/linearLayout"
+        android:layout_below="@id/imageView_eventPic_list_layout"
+        android:layout_alignLeft="@id/TextView_eventName"
+        android:layout_alignStart="@id/TextView_eventName" />
+
+</RelativeLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:wheel="http://schemas.android.com/tools"
+    android:scrollbars="none"
+    android:padding="5dp">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/framelayout_image_job"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" >
+
+            <com.mikepenz.iconics.view.IconicsImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/imageView_companyLogo"
+                app:iiv_color="@color/grey"
+                app:iiv_icon="faw-file-image-o"
+                 />
+
+            <com.pnikosis.materialishprogress.ProgressWheel
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/progress_wheel"
+                wheel:matProg_barColor="#5588FF"
+                wheel:matProg_progressIndeterminate="true"
+                android:layout_gravity="center" />
+
+
+        </FrameLayout>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/framelayout_image_job"
+            android:id="@+id/cardView_name"
+            android:layout_marginTop="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText_companyName"
+                        android:inputType="textAutoComplete"
+                        android:hint="Name Of Company"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textAutoComplete"                        android:id="@+id/editText_designation"
+                        android:hint="Role"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+
+            android:id="@+id/card_view_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="0dp"
+            android:layout_gravity="left|center"
+            android:layout_below="@+id/cardView_name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                   <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/textInputLayout_jobDescription"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:id="@+id/editText_Designation"
+                        android:inputType="textMultiLine"
+                        android:hint="Description of Job"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                 <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:iiv_icon="faw-map-marker"
+                    app:iiv_color="@color/black_de"
+                    android:layout_below="@+id/textInputLayout_jobDescription"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/view16" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textInputLayout_jobDescription"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/view16"
+                    android:layout_toEndOf="@+id/view16">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:inputType="textAutoComplete"
+                        android:id="@+id/editText_jobLocation"
+                        android:hint="@string/location"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+
+            android:id="@+id/card_view_contact"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/card_view_description"
+            android:layout_alignLeft="@+id/card_view_description"
+            android:layout_alignStart="@+id/card_view_description"
+            android:layout_marginTop="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_view_description"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:nestedScrollingEnabled="false"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/contact"
+                    android:id="@+id/textView_Contact"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_email_jobDetails"
+                    android:layout_toRightOf="@+id/imageView_email"
+                    android:layout_below="@+id/textView_Contact">
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_toRightOf="@+id/imageView_email"
+                    android:layout_below="@+id/textView_website">
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView_email"
+                    app:iiv_icon="faw-envelope"
+                    app:iiv_color="@color/black_de"
+                    android:layout_alignTop="@+id/editText_member_email"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp" />
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/icon_webLink"
+                    app:iiv_icon="faw-link"
+                    app:iiv_color="@color/black_de"
+                    android:layout_alignTop="@+id/editText_companyWebLink"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textWebEditText"
+                    android:id="@+id/editText_companyWebLink"
+                    android:hint="Web Links"
+                    android:layout_below="@+id/textView_Contact"
+                    android:layout_toRightOf="@+id/icon_webLink"
+                    android:layout_toEndOf="@+id/icon_webLink"
+                    android:layout_marginLeft="5dp" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/editText_member_email"
+                    android:hint="e-mail address"
+                    android:layout_below="@+id/editText_companyWebLink"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toRightOf="@+id/icon_webLink"
+                    android:layout_toEndOf="@+id/icon_webLink"
+                    android:layout_marginLeft="5dp" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_view_contact"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" >
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save_data"
+                android:id="@+id/button_post_job"
+                style="?android:attr/borderlessButtonStyle"
+                />
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

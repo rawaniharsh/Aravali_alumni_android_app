@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:id="@+id/relativeLayout_login"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/final_login_screen">
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/forget_password"
+        android:textSize="18sp"
+        android:textColor="@color/card_background"
+        android:id="@+id/textView_forgetpasswd"
+        android:layout_below="@+id/linearLayout_password"
+        android:layout_alignRight="@+id/linearLayout_password"
+        android:layout_alignEnd="@+id/linearLayout_password"
+        android:layout_marginTop="15dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_bg"
+        android:padding="10dp"
+        android:layout_below="@+id/linearLayout_email"
+        android:layout_alignLeft="@+id/linearLayout_email"
+        android:layout_alignStart="@+id/linearLayout_email"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout_password">
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:iiv_icon="faw-lock"
+            android:layout_gravity="center"
+            app:iiv_color="@color/card_background"
+            android:layout_marginLeft="3dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:text=""
+            android:hint="Password"
+            android:textColorHint="@color/white_hint"
+            android:inputType="textPassword"
+            android:id="@+id/editText_login_password"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Signup"
+        android:layout_width="match_parent"
+        android:text="Not registered? Signup"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:background="@drawable/solid_red_background"
+        android:layout_marginTop="12dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/button_login"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_bg"
+        android:padding="10dp"
+        android:id="@+id/linearLayout_email"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:iiv_icon="faw-envelope"
+            android:layout_gravity="center"
+            app:iiv_color="@color/card_background"
+            android:layout_marginLeft="3dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:text=""
+            android:hint="Email"
+            android:textColorHint="@color/white_hint"
+            android:inputType="textEmailAddress"
+            android:id="@+id/editText_login_email"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="@string/log_in"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:background="@drawable/solid_red_background"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

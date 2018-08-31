@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">AravaliAlumni</string>
+    <string-array name="year_array">
+        <item>2004</item>
+        <item>2005</item>
+        <item>2006</item>
+        <item>2007</item>
+        <item>2008</item>
+        <item>2009</item>
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+    </string-array>
+    <string-array name="branch_array">
+        <item>CS</item>
+        <item>IT</item>
+        <item>ME</item>
+        <item>AE</item>
+        <item>ECE</item>
+        <item>EE</item>
+        <item>EIC</item>
+    </string-array>
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="location">Location</string>
+    <string name="contact">Contact</string>
+    <string name="is_logged_in">IS_LOGGED_IN</string>
+    <string name="userid">Userid</string>
+    <string name="username">Username</string>
+    <string name="useremail">Useremail</string>
+    <string name="image_company">Company Image</string>
+
+    <!--TODO static data -->
+
+    <string name="save_data">SAVE CHANGES</string>
+
+    <!--Filter-->
+    <string name="apply_filter">APPLY</string>
+    <string name="members">Members</string>
+    <string name="events">Events</string>
+    <string name="about">About</string>
+
+    <!--Settings-->
+    <string name="my_profile">My Profile</string>
+    <string name="facebook">Facebook Page</string>
+    <string name="post_a_job">Post a Job</string>
+    <string name="about_app">About Aravali Alumni App</string>
+    <string name="about_college">About College</string>
+    <string name="support_us">Support Us</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="faqs">FAQs</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="log_out">Log Out</string>
+    <string name="log_in">Log In</string>
+    <string name="log_out_prompt">You are successfully logged Out</string>
+
+    <string name="forget_password">Forget Password</string>
+
+    <string name="forget_password_prompt">Next step will give you a new password on given email id</string>
+
+
+    <string name="isNerdCheckBox_text">I am doing Higher studies</string>
+
+    <string name="designation">Designation</string>
+
+    <!--Error messages-->
+    <string name="error_email">Enter a valid email address</string>
+    <string name="error_password">Make it a bit stronger</string>
+    <string name="error_name">Please provide full name</string>
+    <string name="error_">Make it a bit stronger</string>
+    <string name="title_activity_navigation">Aravali Alumni</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

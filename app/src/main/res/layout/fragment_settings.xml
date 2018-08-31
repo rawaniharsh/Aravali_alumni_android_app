@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:paddingRight="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card1"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/cardView_logout"
+                android:layout_alignEnd="@+id/cardView_logout"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp">
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        app:iiv_color="@android:color/black"
+                        app:iiv_icon="faw-briefcase"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/imageView2"
+                        android:layout_alignTop="@+id/button_postjob"
+                        android:layout_alignLeft="@+id/imageView"
+                        android:layout_alignStart="@+id/imageView"
+                        android:layout_marginTop="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textAlignment="viewStart"
+                        android:gravity="start"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:clickable="true"
+                        android:id="@+id/button_postjob"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/imageView2"
+                        android:layout_toEndOf="@+id/imageView2"
+                        android:layout_marginLeft="10dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#a6a6a6"
+                        android:layout_below="@id/button_postjob"/>
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        app:iiv_color="@android:color/black"
+                        app:iiv_icon="faw-user"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignTop="@+id/button_myprofile"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/imageView" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:text="@string/my_profile"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:textAlignment="viewStart"
+                        android:gravity="start"
+                        android:id="@+id/button_myprofile"
+                        android:layout_below="@+id/button_postjob"
+                        android:layout_alignLeft="@+id/button_postjob"
+                        android:layout_alignStart="@+id/button_postjob" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#a6a6a6"
+                        android:layout_below="@id/button_myprofile"
+                        android:layout_alignLeft="@+id/button_fbPage"
+                        android:layout_alignStart="@+id/button_fbPage" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/facebook"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:id="@+id/button_fbPage"
+                        android:textAlignment="viewStart"
+                        android:gravity="start"
+                        android:layout_below="@+id/button_myprofile"
+                        android:layout_alignLeft="@+id/button_myprofile"
+                        android:layout_alignStart="@+id/button_myprofile" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#a6a6a6"
+                        android:layout_below="@id/button_fbPage" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_app"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:id="@+id/button_about_app"
+                        android:textAlignment="viewStart"
+                        android:gravity="start"
+                        android:layout_below="@+id/button_fbPage"
+                        android:layout_alignLeft="@+id/button_fbPage"
+                        android:layout_alignStart="@+id/button_fbPage" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#a6a6a6"
+                        android:layout_below="@id/button_about_app"
+                        android:layout_alignLeft="@+id/button_fbPage"
+                        android:layout_alignStart="@+id/button_fbPage" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_college"
+                        android:id="@+id/button_about_college"
+                        android:textAlignment="viewStart"
+                        android:gravity="start"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_below="@+id/button_about_app"
+                        android:layout_alignLeft="@+id/button_about_app"
+                        android:layout_alignStart="@+id/button_about_app" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#a6a6a6"
+                        android:layout_below="@id/button_about_college"
+                        android:id="@+id/view11" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/support_us"
+                        android:id="@+id/button_support"
+                        android:textAlignment="viewStart"
+                        android:gravity="start"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_below="@+id/button_about_college"
+                        android:layout_alignLeft="@+id/button_about_app"
+                        android:layout_alignStart="@+id/button_about_app" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#a6a6a6"
+                        android:layout_below="@id/button_support"
+                        android:layout_alignLeft="@+id/button_about_app"
+                        android:layout_alignStart="@+id/button_about_app" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_us"
+                        android:id="@+id/button_contact_us"
+                        android:textAlignment="viewStart"
+                        android:gravity="start"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_below="@+id/button_support"
+                        android:layout_alignLeft="@+id/button_about_app"
+                        android:layout_alignStart="@+id/button_about_app" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#a6a6a6"
+                        android:layout_below="@id/button_contact_us"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#a6a6a6"
+                        android:layout_alignLeft="@+id/button_fbPage"
+                        android:layout_alignStart="@+id/button_fbPage" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rate_us"
+                        android:id="@+id/button_rate_us"
+                        android:textAlignment="viewStart"
+                        android:gravity="start"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:layout_alignLeft="@+id/button_about_college"
+                        android:layout_alignStart="@+id/button_about_college" />
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        app:iiv_color="@android:color/black"
+                        app:iiv_icon="faw-facebook-square"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/imageView6"
+
+                        android:layout_below="@+id/button_myprofile"
+                        android:layout_toLeftOf="@+id/button_postjob"
+                        android:layout_toStartOf="@+id/button_postjob"
+                        android:layout_marginTop="11dp" />
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        app:iiv_color="@android:color/black"
+                        app:iiv_icon="faw-bars"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/imageView8"
+
+                        android:layout_alignLeft="@+id/imageView6"
+                        android:layout_alignStart="@+id/imageView6"
+                        android:layout_marginTop="11dp"
+                        android:layout_below="@+id/button_fbPage" />
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        app:iiv_color="@android:color/black"
+                        app:iiv_icon="faw-info-circle"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+
+                        android:id="@+id/imageView9"
+                        android:layout_alignTop="@+id/button_about_college"
+                        android:layout_toLeftOf="@+id/button_postjob"
+                        android:layout_toStartOf="@+id/button_postjob"
+                        android:layout_marginTop="11dp" />
+
+
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        app:iiv_color="@android:color/black"
+                        app:iiv_icon="faw-envelope"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/imageView11"
+                        android:layout_below="@+id/view11"
+                        android:layout_alignLeft="@+id/imageView9"
+                        android:layout_alignStart="@+id/imageView9"
+                        android:layout_marginTop="11dp" />
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        app:iiv_color="@android:color/black"
+                        app:iiv_icon="faw-question-circle"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/imageView12"
+
+
+                        android:layout_alignLeft="@+id/imageView11"
+                        android:layout_alignStart="@+id/imageView11"
+                        android:layout_marginTop="11dp" />
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        app:iiv_color="@android:color/black"
+                        app:iiv_icon="faw-star"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/imageView13"
+
+
+                        android:layout_alignLeft="@+id/imageView12"
+                        android:layout_alignStart="@+id/imageView12"
+                        android:layout_marginTop="11dp" />
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        app:iiv_color="@android:color/black"
+                        app:iiv_icon="faw-info-circle"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/imageView14"
+
+                        android:layout_alignTop="@+id/button_contact_us"
+                        android:layout_alignLeft="@+id/imageView11"
+                        android:layout_alignStart="@+id/imageView11"
+                        android:layout_marginTop="11dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardView_logout"
+                android:layout_below="@+id/card1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content">
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        app:iiv_color="#ff1744"
+                        app:iiv_icon="faw-power-off"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+
+                        android:id="@+id/imageView_logout"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_alignTop="@+id/button_logout"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:text="@string/log_out"
+                        android:textAlignment="viewStart"
+                        android:gravity="start"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:clickable="true"
+                        android:textColor="#ff1744"
+                        android:layout_marginLeft="17dp"
+                        android:id="@+id/button_logout"
+                        android:layout_toRightOf="@+id/imageView_logout"
+                        android:layout_toEndOf="@+id/imageView_logout"
+                        android:layout_marginStart="17dp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

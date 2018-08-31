@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    android:fillViewport="false"
+    android:layout_width="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView_companyName_jobDetails"
+            android:layout_below="@+id/imageView_companyImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView_companyImage"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/image_company"
+            android:layout_marginTop="10dp" />
+
+
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView_location_jobDetails"
+             android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+
+             android:layout_below="@+id/textView_companyName_jobDetails" />
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_designation_jobDetails"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="Job Description - "
+                android:id="@+id/textView_jobDescription"
+                android:layout_margin="5dp"/>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_contact"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/card_view_description"
+            android:layout_alignLeft="@+id/card_view_description"
+            android:layout_alignStart="@+id/card_view_description"
+            android:layout_marginTop="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_view_description"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:nestedScrollingEnabled="false"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:text="@string/contact"
+                    android:id="@+id/textView_Contact"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/textView_email_jobDetails"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/imageView_email"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/textView_Contact" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/textView_website"
+                    android:layout_below="@+id/imageView_email"
+                    android:layout_alignLeft="@+id/textView_email_jobDetails"
+                    android:layout_marginTop="5dp" />
+
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:id="@+id/imageView_phone"
+                     app:iiv_icon="faw-link"
+                     app:iiv_color="@color/black_de"
+                    android:layout_alignBottom="@+id/textView_website"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="5dp" />
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:id="@+id/imageView_email"
+                    app:iiv_icon="faw-envelope"
+                    app:iiv_color="@color/black_de"
+                    android:layout_alignBottom="@+id/textView_email_jobDetails"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/textView_postedby"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_marginBottom="5dp"
+                    android:layout_below="@+id/imageView_phone"
+                    android:layout_alignLeft="@+id/imageView_phone"
+                    android:layout_alignStart="@+id/imageView_phone" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            android:id="@+id/textView_designation_jobDetails"
+            android:layout_below="@+id/textView_location_jobDetails"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:id="@+id/imageView"
+            app:iiv_icon="faw-map-marker"
+            app:iiv_color="@color/black_de"
+            android:layout_alignBottom="@+id/textView_location_jobDetails"
+            android:layout_toLeftOf="@+id/textView_location_jobDetails"
+            android:layout_toStartOf="@+id/textView_location_jobDetails"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp" />
+
+
+
+    </RelativeLayout>
+</ScrollView>

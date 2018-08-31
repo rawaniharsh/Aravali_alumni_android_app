@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="none"
+    android:fillViewport="false"
+    android:layout_width="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView_member_name"
+            android:layout_below="@+id/imageView_profilepic"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/textView_designation_n_CompanyName"
+            android:layout_toEndOf="@+id/textView_designation_n_CompanyName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            android:id="@+id/textView_designation_n_CompanyName"
+
+            android:layout_below="@+id/textView_member_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:iiv_icon="faw-pencil-square-o"
+            app:iiv_color="@color/black_de"
+            android:id="@+id/imageView_edit"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/textView_year"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView_profilepic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView_bio"
+            android:layout_below="@+id/textView_branch"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView_branch"
+            android:layout_below="@+id/textView_designation_n_CompanyName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView_year"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" />
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_bio"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="left|center">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+                <TextView
+                    android:id="@+id/info_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:text="@string/location"
+                    android:layout_margin="5dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/grey"
+                    android:layout_below="@id/info_text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/textView_homeLocation"
+                    android:layout_below="@+id/info_text"
+
+                    android:layout_alignLeft="@+id/editText_jobLocation"
+                    android:layout_alignStart="@+id/editText_jobLocation"
+                    android:layout_marginTop="5dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/grey"
+                    android:layout_toEndOf="@+id/imageView_work"
+                    android:layout_toRightOf="@id/imageView_work"
+                    android:layout_marginBottom="5dp"
+                    android:layout_below="@+id/textView_homeLocation"
+                    android:layout_alignLeft="@+id/textView_homeLocation"
+                    android:layout_alignStart="@+id/textView_homeLocation"
+                    android:layout_marginTop="5dp" />
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:id="@+id/imageView_work"
+                    app:iiv_icon="faw-briefcase"
+                    app:iiv_color="@color/black_de"
+                    android:layout_alignTop="@+id/editText_jobLocation"
+                    android:layout_alignLeft="@+id/info_text"
+                    android:layout_alignStart="@+id/info_text"
+                    android:layout_marginTop="2dp" />
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:id="@+id/imageView_home"
+                    app:iiv_icon="faw-home"
+                    app:iiv_color="@color/black_de"
+                    android:layout_alignTop="@+id/textView_homeLocation"
+                    android:layout_alignLeft="@+id/imageView_work"
+                    android:layout_alignStart="@+id/imageView_work"
+                    android:layout_marginTop="2dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/editText_jobLocation"
+                    android:layout_below="@+id/textView_homeLocation"
+                    android:layout_toRightOf="@+id/imageView_work"
+                    android:layout_toEndOf="@+id/imageView_work"
+                    android:layout_margin="10dp" />
+
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_contact"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="5dp"
+            android:layout_below="@+id/card_view_description"
+            android:layout_alignLeft="@+id/card_view_description"
+            android:layout_alignStart="@+id/card_view_description"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_view_description"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:nestedScrollingEnabled="false"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:text="@string/contact"
+                    android:layout_margin="5dp"
+                    android:id="@+id/textView_Contact"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/grey"
+                    android:layout_alignBottom="@+id/textView_Contact"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:clickable="true"
+                    android:id="@+id/textView_fbLink"
+
+                    android:layout_toRightOf="@+id/imageView_email"
+                    android:layout_toEndOf="@+id/imageView_email"
+                    android:layout_below="@id/textView_Contact"
+                    android:layout_marginLeft="10dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/grey"
+                    android:layout_toEndOf="@+id/imageView_email"
+                    android:layout_toRightOf="@id/imageView_email"
+                    android:layout_below="@+id/textView_fbLink"
+                    android:layout_alignLeft="@+id/textView_fbLink"
+                    android:layout_alignStart="@+id/textView_fbLink"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:clickable="true"
+                    android:id="@+id/textView_contact"
+                    android:layout_below="@+id/textView_fbLink"
+                    android:layout_alignLeft="@+id/textView_fbLink"
+                    android:layout_alignStart="@+id/textView_fbLink"
+                    android:layout_marginTop="10dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/grey"
+                    android:layout_toEndOf="@+id/imageView_email"
+                    android:layout_toRightOf="@id/imageView_email"
+                    android:layout_below="@+id/textView_contact"
+                    android:layout_alignLeft="@+id/textView_fbLink"
+                    android:layout_alignStart="@+id/textView_fbLink"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/view15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:clickable="true"
+                    android:id="@+id/textView_mail"
+                    android:layout_below="@+id/textView_contact"
+                    android:layout_alignLeft="@+id/textView_fbLink"
+                    android:layout_alignStart="@+id/textView_fbLink"
+                    android:layout_marginTop="10dp" />
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:id="@+id/imageView_phonejhbk"
+                    app:iiv_icon="faw-phone"
+                    app:iiv_color="@color/black_de"
+                    android:layout_alignTop="@+id/textView_contact"
+                    android:layout_alignLeft="@+id/imageView_email"
+                    android:layout_alignStart="@+id/imageView_email"
+                    android:layout_marginTop="2dp" />
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:id="@+id/imageView_phone"
+                    app:iiv_icon="faw-envelope"
+                    app:iiv_color="@color/black_de"
+                    android:layout_alignTop="@+id/textView_mail"
+                    android:layout_toLeftOf="@+id/textView_fbLink"
+                    android:layout_toStartOf="@+id/textView_fbLink" />
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:id="@+id/imageView_email"
+                    app:iiv_icon="faw-link"
+                    app:iiv_color="@color/black_de"
+                    android:layout_alignTop="@+id/textView_fbLink"
+                    android:layout_alignLeft="@+id/textView_Contact"
+                    android:layout_alignStart="@+id/textView_Contact"
+                    android:layout_marginTop="2dp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>
